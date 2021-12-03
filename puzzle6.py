@@ -7,7 +7,7 @@ def readfile(file):
     return data
 
 def problem1():
-    lines = readfile('problem6.txt')
+    lines = readfile('input/Problem6.txt')
     total = 0
     for group in lines:
         string = group.replace('\n','').replace('\r', '').replace('\t', '')
@@ -17,7 +17,7 @@ def problem1():
 
 
 def problem2():
-    lines = readfile('problem6.txt')
+    lines = readfile('input/Problem6.txt')
     total = 0
     for group in lines:
         info = group.split('\n')
@@ -25,7 +25,7 @@ def problem2():
         # Must find all shared characters in every entry
         shared = ''.join(set(info[0]))
         for person in info:
-            print(f"comparing {person} and {shared}")
+            # print(f"comparing {person} and {shared}")
             shared = ''.join(set(shared).intersection(person))
         total += len(shared)
 

@@ -13,7 +13,7 @@ def readfile(file):
     return data[:-1]
 
 def problem1():
-    lines = readfile('problem5.txt')
+    lines = readfile('input/Problem5.txt')
     #lines = ["FBFBBFFRLR"]
     seat_ids = []
     seats = []
@@ -49,7 +49,7 @@ def problem1():
 
 
 def problem2():
-    lines = readfile('problem5.txt')
+    lines = readfile('input/Problem5.txt')
     pass
 
 problem1()

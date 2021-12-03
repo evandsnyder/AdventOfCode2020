@@ -35,7 +35,7 @@ def readfile(file):
     return data
 
 def problem1():
-    lines = readfile('problem7.txt')
+    lines = readfile('input/Problem7.txt')
     bags = dict()
     for line in lines:
         line = line[:-1] # Remove .
@@ -63,7 +63,7 @@ def problem1():
     print(checkParent("shiny gold", children, [])-1)
 
 def problem2():
-    lines = readfile('problem7.txt')
+    lines = readfile('input/Problem7.txt')
     bags = dict()
     for line in lines:
         line = line[:-1] # Remove .

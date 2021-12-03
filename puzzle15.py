@@ -19,8 +19,9 @@ class Puzzle():
         # self.data = {20: 1, 0: 2, 1: 3, 11: 4, 6: 5, 3: 6}
         # self.data = {0: Number(0, 1), 3: Number(3,2), 6: Number(6, 3)}
         self.data = {}
+        # 14,1,17,0,3,20
 
-        for i, v in enumerate([20, 0, 1, 11, 6, 3]):
+        for i, v in enumerate([14,1,17,0,3,20]):
             self.data[v] = Number(v, i+1)
 
 

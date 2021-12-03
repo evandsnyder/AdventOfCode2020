@@ -35,9 +35,9 @@ class Puzzle():
                         seats_changed = True
                         next_frame[i][j] = 'L'
             self.data = copy.deepcopy(next_frame)
-            for i in self.data:
-                print(''.join(i))
-            print("")
+            # for i in self.data:
+            #     print(''.join(i))
+            # print("")
         print(sum([i.count('#') for i in self.data]))
     
     def simulate(self):
@@ -58,9 +58,9 @@ class Puzzle():
                         seats_changed = True
                         next_frame[i][j] = 'L'
             self.data = copy.deepcopy(next_frame)
-            for i in self.data:
-                print(''.join(i))
-            print("")
+            # for i in self.data:
+            #     print(''.join(i))
+            # print("")
             m += 1
     
     def count_surrounding(self, i, j, value='#'):
@@ -135,5 +135,5 @@ class Puzzle():
 
 if __name__ == '__main__':
     puzzle = Puzzle()
-    # puzzle.problem1()
+    puzzle.problem1()
     puzzle.problem2()

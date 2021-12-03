@@ -30,7 +30,7 @@ def does_loop(allInstructions):
     return False
 
 def problem1():
-    lines = readfile('puzzle8.txt')
+    lines = readfile('input/Puzzle8.txt')
     allInstructions = []
     for line in lines:
         line = line.split(' ')
@@ -38,7 +38,7 @@ def problem1():
     does_loop(allInstructions)
 
 def problem2():
-    lines = readfile('puzzle8.txt')
+    lines = readfile('input/Puzzle8.txt')
     allInstructions = []
     for line in lines:
         line = line.split(' ')

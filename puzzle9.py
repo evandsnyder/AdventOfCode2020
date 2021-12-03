@@ -32,6 +32,6 @@ def problem2(lines):
                 break
             j += 1
 
-data = readfile('input/puzzle9.txt')
+data = readfile('input/Puzzle9.txt')
 problem1(data)
 problem2(data)
