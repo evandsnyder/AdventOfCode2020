@@ -17,7 +17,7 @@ def readfile(file):
     return passports
 
 def problem1():
-    passports = readfile('input/Problem4.txt')
+    passports = readfile('input/puzzle4.txt')
     count = 0
     for passport in passports:
         data = dict()
@@ -78,7 +78,7 @@ def isValid(passport):
 
 
 def problem2():
-    passports = readfile('input/Problem4.txt')
+    passports = readfile('input/puzzle4.txt')
     count = 0
     for passport in passports:
         data = dict()

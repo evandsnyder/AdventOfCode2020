@@ -7,7 +7,7 @@ def readfile(file):
     return data
 
 def problem1():
-    lines = readfile('input/Problem6.txt')
+    lines = readfile('input/puzzle6.txt')
     total = 0
     for group in lines:
         string = group.replace('\n','').replace('\r', '').replace('\t', '')
@@ -17,7 +17,7 @@ def problem1():
 
 
 def problem2():
-    lines = readfile('input/Problem6.txt')
+    lines = readfile('input/puzzle6.txt')
     total = 0
     for group in lines:
         info = group.split('\n')

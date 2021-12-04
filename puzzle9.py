@@ -19,7 +19,7 @@ def problem1(lines):
             break
 
 def problem2(lines):
-    magic_number = 177777905
+    magic_number = 217430975
     # find stuff that adds up to this...
     for i, n in enumerate(lines):
         # Add all from [i:]

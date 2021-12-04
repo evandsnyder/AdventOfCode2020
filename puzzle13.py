@@ -15,3 +15,19 @@ for id in idlist[1:]:
             step = step*id
             start = i    
 print(start)
+
+
+# find the number nearest
+start_time = int(data[0])
+# find the id of the bus I can take
+# multiply the id by the difference between the start and
+nearest_start_time = 939 - (939 % 7) + 7
+alt_ids = {}
+for id in idlist:
+    alt_ids[id] = start_time - (start_time % id) + id
+# start_time - min(times)
+# find min and corresponding id
+t = min(alt_ids.values())
+id = list(alt_ids.keys())[list(alt_ids.values()).index(t)]
+
+print(f"Part 1: {(t - start_time) * id}")
